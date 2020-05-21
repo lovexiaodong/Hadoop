@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HBase_Demo/HBase_Demo.iml" filepath="$PROJECT_DIR$/HBase_Demo/HBase_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hadoop.iml" filepath="$PROJECT_DIR$/Hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hadoop_Demo/Hadoop_Demo.iml" filepath="$PROJECT_DIR$/Hadoop_Demo/Hadoop_Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zookeer_Demo/Zookeer_Demo.iml" filepath="$PROJECT_DIR$/Zookeer_Demo/Zookeer_Demo.iml" />
+    </modules>
+  </component>
+</project>
