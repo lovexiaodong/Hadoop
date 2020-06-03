@@ -7,7 +7,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
-
+//
 public class WcMap extends Mapper<LongWritable, Text, Text, IntWritable> {
 
     private Text world  = new Text();

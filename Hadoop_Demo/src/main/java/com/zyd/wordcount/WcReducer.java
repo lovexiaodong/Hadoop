@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
 
-
+//
 public class WcReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 
 
