@@ -23,6 +23,9 @@ public class WholeFileFormat extends FileInputFormat<Text, BytesWritable> {
 
 
     public RecordReader<Text, BytesWritable> createRecordReader(InputSplit split, TaskAttemptContext context) throws IOException, InterruptedException {
-        return new WholeFileRecordReader();
+        WholeFileRecordReader wholeFileRecordReader = new WholeFileRecordReader();
+        wholeFileRecordReader.initialize(split, context);
+
+        return wholeFileRecordReader;
     }
 }

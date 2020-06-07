@@ -56,7 +56,9 @@ public class WholeFileRecordReader extends RecordReader<Text, BytesWritable> {
             key.set(fileSplit.getPath().toString());
 
             byte[] bytes = new byte[(int) fileSplit.getLength()];
+            inputStream.read(bytes);
             value.set(bytes, 0, bytes.length);
+
             notRead = false;
             return true;
         }
