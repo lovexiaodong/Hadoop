@@ -1,5 +1,6 @@
 package com.zyd.wordcount;
 
+import com.zyd.partition.MyPartition;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -31,6 +32,8 @@ public class WcDriver {
             job.setMapOutputValueClass(IntWritable.class);
             job.setOutputKeyClass(Text.class);
             job.setOutputValueClass(IntWritable.class);
+
+            job.setPartitionerClass(MyPartition.class);
 
             FileInputFormat.setInputPaths(job, new Path(args[0]));
             FileOutputFormat.setOutputPath(job, new Path(args[1]));
