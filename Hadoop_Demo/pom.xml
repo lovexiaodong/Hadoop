@@ -12,7 +12,7 @@
     <artifactId>Hadoop_Demo</artifactId>
 
     <properties>
-         <hadoop_version>2.7.7</hadoop_version>
+         <hadoop_version>3.2.3</hadoop_version>
     </properties>
     <dependencies>
 
